@@ -1,0 +1,9 @@
+pyyaml
+requests
+requests-kerberos
+pyopenssl
+prometheus-client
+hdfs
+kazoo
+kafka-python
+hvac
