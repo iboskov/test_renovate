@@ -8,31 +8,19 @@
       {
         "matchPackageNames": ["python-*", "docker-*"],
         "updateTypes": ["major", "minor", "patch"]
+      },
+      {
+        "matchPackagePatterns": ["^docker-.*"],
+        "lablels": ["docker"]
+      },
+      {
+        "matchPackagePatterns": ["^python-.*"],
+        "lablels": ["python"]
       }
     ],
     "commitMessagePrefix": "[Renovate]",
     "groupName": "all-dependencies",
     "prCreation": "grouped",
-    "labels": [
-      {
-        "packagePatterns": [
-          "requirements.in",
-          "requirements.txt",
-          "Pipfile",
-          "setup.py"
-        ],
-        "add": ["python"]
-      },
-      {
-        "packagePatterns": [
-          "Dockerfile",
-          "docker-compose.yml"
-        ],
-        "add": ["docker"]
-      },
-      {
-        "add": ["dependencies"]
-      }
-    ],
+    "labels": ["dependencies"],
     "prTitle": "Update Dependencies"
   }
