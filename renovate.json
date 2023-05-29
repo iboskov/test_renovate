@@ -1,6 +1,9 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "extends": ["config:base"],
+    "extends": [
+      "config:base",
+      "group:all-dependencies"
+    ],
     "packageRules": [
       {
         "matchPackageNames": ["python-*", "docker-*"],
@@ -8,6 +11,28 @@
       }
     ],
     "commitMessagePrefix": "[Renovate]",
-    "prCreation": "single"
+    "groupName": "all-dependencies",
+    "prCreation": "grouped",
+    "labels": [
+      {
+        "packagePatterns": [
+          "requirements.in",
+          "requirements.txt",
+          "Pipfile",
+          "setup.py"
+        ],
+        "add": ["python"]
+      },
+      {
+        "packagePatterns": [
+          "Dockerfile",
+          "docker-compose.yml"
+        ],
+        "add": ["docker"]
+      },
+      {
+        "add": ["dependencies"]
+      }
+    ],
+    "prTitle": "Update Dependencies"
   }
-
