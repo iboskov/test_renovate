@@ -18,6 +18,5 @@
     "commitMessagePrefix": "[Renovate]",
     "groupName": "all-dependencies",
     "prCreation": "grouped",
-    "labels": ["dependencies"],
-    "prTitle": "Update Dependencies"
+    "labels": ["dependencies"]
   }
