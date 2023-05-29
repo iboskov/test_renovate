@@ -11,11 +11,11 @@
       },
       {
         "matchPackagePatterns": ["^docker-.*"],
-        "lablels": ["docker"]
+        "labels": ["docker"]
       },
       {
         "matchPackagePatterns": ["^python-.*"],
-        "lablels": ["python"]
+        "labels": ["python"]
       }
     ],
     "commitMessagePrefix": "[Renovate]",
