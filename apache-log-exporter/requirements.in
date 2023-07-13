@@ -2,4 +2,4 @@ pygrok
 pytz
 prometheus-client
 requests
-confluent-kafka==1.8.2
+confluent-kafka==2.2.0
