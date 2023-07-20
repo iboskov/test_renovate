@@ -8,12 +8,16 @@ certifi==2022.6.15
     # via requests
 charset-normalizer==2.1.0
     # via requests
+deprecation==2.1.0
+    # via pdpyras
 idna==3.3
     # via requests
 kazoo==2.8.0
-    # via -r requirements.in
-pdpyras==4.5.0
-    # via -r requirements.in
+    # via -r dead-mans-snitch/requirements.in
+packaging==23.1
+    # via deprecation
+pdpyras==5.1.1
+    # via -r dead-mans-snitch/requirements.in
 requests==2.28.1
     # via pdpyras
 six==1.16.0
